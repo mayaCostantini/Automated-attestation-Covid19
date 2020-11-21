@@ -1,6 +1,6 @@
 # Automated quarantine attestation filling
 
-Python script triggered by Google Assistant voice command which fills a Covid-19 attestation to go out during quarantine (official attestation only valid in France, available at https://media.interieur.gouv.fr/deplacement-covid-19/).
+Python script triggered by Google Assistant voice command which automatically fills a Covid-19 attestation to go out during quarantine (official attestation only valid in France, available at https://media.interieur.gouv.fr/deplacement-covid-19/).
 
 
 ## Requirements : 

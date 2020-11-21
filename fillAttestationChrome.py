@@ -42,14 +42,17 @@ options.add_experimental_option('prefs', {
 "plugins.always_open_pdf_externally": True #It will not show PDF directly in chrome
 })
 
-driver = webdriver.Chrome('/Users/maya/Downloads/chromedriver', options=options)
+chromedriverPath = '/Users/your/path/to/chromedriver' # Replace this line with the path to your chromedriver download
+
+driver = webdriver.Chrome(chromedriverPath, options=options)
 
 wait = WebDriverWait(driver, 5)
 driver.get("https://media.interieur.gouv.fr/deplacement-covid-19/")
 
 wait.until(ec.element_to_be_clickable((By.ID, "reload-btn"))).click()
 
-keyboardEntries = {"firstname" : "Maya", "lastname" : "Costantini", "placeofbirth" : "Neuilly-sur-Seine", "address" : "4 rue Thiers", "city" : "Grenoble", "zipcode" : "38000"}
+# Replace the values in keyboardEntries by your personal information. The zipcode must contain five numbers to be valid. 
+keyboardEntries = {"firstname" : "Jon", "lastname" : "Snow", "placeofbirth" : "Westeros", "address" : "5 Street of Silver", "city" : "King's Landing", "zipcode" : "10000"}
 
 for entry in keyboardEntries.keys() : 
     elem = driver.find_element_by_name(entry)
@@ -60,9 +63,9 @@ for entry in keyboardEntries.keys() :
 
 birthday = driver.find_element_by_name("birthday")
 birthday.send_keys(Keys.RETURN)
-birthday.send_keys("05")
-birthday.send_keys("03")
-birthday.send_keys("1999")
+birthday.send_keys("01") # Your day of birth 
+birthday.send_keys("01") # Your month of birth 
+birthday.send_keys("1999") # Your year of birth 
 
 currentTime = time.localtime()
 currentHour = str(currentTime.tm_hour)

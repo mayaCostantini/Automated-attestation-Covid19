@@ -12,9 +12,9 @@ def sendFile() :
 
     mailContent = f'Hello, here is your attestation for the {currentTime.tm_mday}/{currentTime.tm_mon}/{currentTime.tm_year}, {currentTime.tm_hour}h{currentTime.tm_min}.'
 
-    senderAddress = 'mytests.projects.2020@gmail.com'
-    senderPassword = 'TestTest2020'
-    receiverAddress = 'maya.cost@hotmail.fr'
+    senderAddress = 'your.sender.email@gmail.com'
+    senderPassword = 'xxxxxxxxxxx'
+    receiverAddress = 'your.receiver.email@gmail.com'
 
     message = MIMEMultipart()
     message['From'] = senderAddress

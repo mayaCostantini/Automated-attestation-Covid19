@@ -5,7 +5,7 @@ Python script triggered by Google Assistant voice command which automatically fi
 
 ## Requirements : 
 
-This program was written on MacOS Catalina 10.15.1 with Visual Studio Code, using Python 3.7.6 and tested on a Lenovo Smart Clock with Google Assistant. To check your current version of Python, run `python --version` in your terminal. If pip is not already installed, run : `curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py` (for more information, see https://pypi.org/).
+This program was written on MacOS Catalina 10.15.1 with Visual Studio Code, using Python 3.7.6. To check your current version of Python, run `python --version` in your terminal. If pip is not already installed, run : `curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py` (for more information, see https://pypi.org/).
 
 Then : 
 ```
